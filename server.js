@@ -31,7 +31,7 @@ app.get('/',(req, res) =>{
 
 
 
-app.get('/', (req, res) => {
+app.get('/attendence', (req, res) => {
    
     pain.find({})
       .then(stds => {
