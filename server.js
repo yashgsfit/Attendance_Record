@@ -21,6 +21,16 @@ const AttSchema = {
 
 const pain = mongoose.model('pain', AttSchema, 'pain');
 
+app.use(express.static('views'));
+app.get('/',(req, res) =>{
+  res.render('indexapp');
+
+})
+
+
+
+
+
 app.get('/', (req, res) => {
    
     pain.find({})
