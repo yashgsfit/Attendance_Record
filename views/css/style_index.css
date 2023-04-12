@@ -1,18 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -147,8 +132,10 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
-  color: var(--cadet-blue-crayola);
+  /* background-color: var(--space-cadet);
+  color: var(--cadet-blue-crayola); */
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(13, 9, 97) 0%, rgba(9,9,121,1) 35%, rgb(0, 112, 134) 100%);
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
