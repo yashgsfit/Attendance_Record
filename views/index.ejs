@@ -12,11 +12,13 @@
       <p><%= std.Name  %></p>
     <%})%> -->
     
-    <h1>Attendance Record</h1>
-
-
-    <table class="table">
-      <thead>
+    <center><h1>Attendance Record</h1></center>
+    
+<section>
+    <div>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
         <tr>
           
           <th scope="col">Name</th>
@@ -24,10 +26,14 @@
           <th scope="col">Date</th>
         </tr>
       </thead>
-      <tbody>
+    </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
       <%stdList.forEach(std => {%>
           <tr>
-              
+               
               <td><%= std.Name %></td>
               <td><%= std.Time %></td>
               <td><%= std.Date %></td>
@@ -35,6 +41,8 @@
       <%})%>
       </tbody>
     </table>
+  </div>
+</section>
 
 
      
